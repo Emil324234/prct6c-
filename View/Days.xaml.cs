@@ -20,7 +20,8 @@ namespace prct6.View
     /// </summary>
     public partial class Days : UserControl
     {
-        public DateTime Date {  get; set; }
+        public int Day { get; set; }
+        public BitmapImage Image { get; set; } /*= new BitmapImage(new Uri("C:\\Users\\My\\Downloads\\эдди.png", UriKind.Absolute));*/
         public Days()
         {
             InitializeComponent();

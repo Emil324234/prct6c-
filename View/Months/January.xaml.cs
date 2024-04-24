@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using prct6.View.Months;
 
-namespace prct6
+namespace prct6.View.Months
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для January.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class January : Page
     {
-        public MainWindow()
+        public January()
         {
             InitializeComponent();
-            PageFrame.Content = new January();
         }
     }
 }
