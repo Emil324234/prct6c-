@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace prct6
+namespace prct6.View
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для CharacterControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CharacterControl : UserControl
     {
-        public MainWindow()
+        public CharacterControl()
         {
             InitializeComponent();
-        }
-
-        private void Calendar_DisplayDateChanged(object sender, CalendarDateChangedEventArgs e)
-        {
-
         }
     }
 }

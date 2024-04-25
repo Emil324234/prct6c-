@@ -66,10 +66,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\Months\January.xaml.cs">
-      <DependentUpon>January.xaml</DependentUpon>
-    </Compile>
-    <Page Include="View\Days.xaml">
+    <Page Include="View\CharactersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -81,17 +78,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="View\Days.xaml.cs">
-      <DependentUpon>Days.xaml</DependentUpon>
+    <Compile Include="View\CharactersPage.xaml.cs">
+      <DependentUpon>CharactersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\Months\January.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -8,34 +8,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="400">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="16*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Text="пн" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Georgia" FontSize="14"/>
-        <TextBlock Text="вт" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Georgia" FontSize="14"/>
-        <TextBlock Text="ср" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Georgia" FontSize="14"/>
-        <TextBlock Text="чт" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Georgia" FontSize="14"/>
-        <TextBlock Text="пт" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Georgia" FontSize="14"/>
-        <TextBlock Text="сб" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Georgia" FontSize="14"/>
-        <TextBlock Text="вс" Grid.Row="1" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Georgia" FontSize="14"/>
-        <Frame x:Name="PageFrame" Grid.Row="2" Grid.ColumnSpan="7"/>
-        <Button x:Name="left" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <md:PackIcon Kind="ArrowLeft"/>
-        </Button>
-        <Button x:Name="right" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <md:PackIcon Kind="ArrowRight"/>
-        </Button>
-        <TextBlock x:Name="month" Grid.Column="1" Grid.ColumnSpan="5" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontFamily="Georgia"/>
+        <Calendar DisplayDateChanged="Calendar_DisplayDateChanged">
+            <Calendar.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Choose me"/>
+                </ContextMenu>
+            </Calendar.ContextMenu>
+        </Calendar>
     </Grid>
 </Window>

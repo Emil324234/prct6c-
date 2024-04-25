@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace prct6.View.Months
+namespace prct6.View
 {
     /// <summary>
-    /// Логика взаимодействия для January.xaml
+    /// Логика взаимодействия для CharactersPage.xaml
     /// </summary>
-    public partial class January : Page
+    public partial class CharactersPage : Page
     {
-        public January()
+        public CharactersPage()
         {
             InitializeComponent();
         }

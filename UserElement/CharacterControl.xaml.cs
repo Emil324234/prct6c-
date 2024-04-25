@@ -13,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace prct6.View
+namespace prct6
 {
     /// <summary>
-    /// Логика взаимодействия для Days.xaml
+    /// Логика взаимодействия для CharacterControl.xaml
     /// </summary>
-    public partial class Days : UserControl
+    public partial class CharacterControl : UserControl
     {
-        public int Day { get; set; }
-        public BitmapImage Image { get; set; } /*= new BitmapImage(new Uri("C:\\Users\\My\\Downloads\\эдди.png", UriKind.Absolute));*/
-        public Days()
+        public CharacterControl()
         {
             InitializeComponent();
-            DataContext = this;
         }
     }
 }
