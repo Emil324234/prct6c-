@@ -13,6 +13,11 @@ namespace prct6.Model
         public BitmapImage ImageChoice { get; set; }
         public DateTime DateChoice { get; set; }
 
-        public Character() { }
+        public Character(string name, BitmapImage image, DateTime date)
+        {
+            Name = name;
+            ImageChoice = image;
+            DateChoice = date;
+        }
     }
 }
