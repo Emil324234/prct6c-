@@ -25,6 +25,7 @@ namespace prct6
         {
             InitializeComponent();
             PageFrame.Content = new January();
+            month.Text = "Январь";
         }
     }
 }

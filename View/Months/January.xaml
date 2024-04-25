@@ -29,39 +29,22 @@
         
         
         <!--первая неделя-->
-        <ListBox Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <calend:Days Day="1"/>
-        </ListBox>
-        <ListBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <calend:Days Day="2"/>
-        </ListBox>
-        <ListBox Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <calend:Days Day="3"/>
-        </ListBox>
-        <ListBox Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <calend:Days Day="4"/>
-        </ListBox>
-        <ListBox Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <calend:Days Day="5"/>
-        </ListBox>
-        <ListBox Grid.Row="0" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <calend:Days Day="6"/>
-        </ListBox>
-        <ListBox>
-            
-        </ListBox>
+        <calend:Days Day="1"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="2" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="3" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="4" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="5" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="6" Grid.Row="0" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <calend:Days Day="7" Grid.Row="0" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         
         <!--вторая неделя-->
-        <ListBox SelectiveScrollingGrid.SelectiveScrollingOrientation="Horizontal" Grid.Row="1">
-            <calend:Days Day="8"  Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <calend:Days Day="9" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <calend:Days Day="10" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <calend:Days Day="11" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <calend:Days Day="12" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <calend:Days Day="13" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <calend:Days Day="14" Grid.Row="1" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        </ListBox>
+        <calend:Days Day="8"  Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="9" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="10" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="11" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="12" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="13" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <calend:Days Day="14" Grid.Row="1" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         
         <!--третья неделя-->
         <calend:Days Day="15"  Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
