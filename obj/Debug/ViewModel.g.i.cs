@@ -59,7 +59,7 @@ namespace prct6c_ {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/prct6c#;component/viewmodel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/prct6c#;component/viewmodel1/viewmodel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\ViewModel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

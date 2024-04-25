@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
-namespace prct6c_.ViewModel.Helpres
+
+namespace prct6.ViewModel
 {
-    internal class MainViewModel
+    internal class JsonSaver
     {
 
     }
