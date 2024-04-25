@@ -12,7 +12,7 @@
         <Calendar x:Name="calend">
             <Calendar.ContextMenu>
                 <ContextMenu>
-                    <MenuItem Header="Choose me" Click="MenuItem_Click"/>
+                    <MenuItem Header="Выберите персонажей" Click="MenuItem_Click"/>
                 </ContextMenu>
             </Calendar.ContextMenu>
         </Calendar>

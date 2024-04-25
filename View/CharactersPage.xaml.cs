@@ -18,7 +18,7 @@ namespace prct6.View
     /// <summary>
     /// Логика взаимодействия для CharactersPage.xaml
     /// </summary>
-    public partial class CharactersPage : Page
+    public partial class CharactersPage : Page //страница для меню выбора персонажей
     {
         public CharactersPage()
         {
