@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 
-
-namespace prct6.ViewModel
+namespace prct6c_.Model
 {
-    internal class JsonSaver
+    internal class Character
     {
-
     }
 }

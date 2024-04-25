@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace prct6c_
+namespace prct6.View
 {
     /// <summary>
-    /// Логика взаимодействия для CharacterControl.xaml
+    /// Логика взаимодействия для CharactersPage.xaml
     /// </summary>
-    public partial class CharacterControl : UserControl
+    public partial class CharactersPage : Page //страница для меню выбора персонажей
     {
-        public CharacterControl()
+        public CharactersPage()
         {
             InitializeComponent();
         }

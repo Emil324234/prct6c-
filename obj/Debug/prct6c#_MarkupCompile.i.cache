@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\OneDrive\Рабочий стол\да\prct6c#\prct6c#\App.xaml
-41207570938
+4-1296998721
 
-111696267284
+14-434535003
 141018241797
-CharacterControl.xaml;CharactersPage.xaml;MainWindow.xaml;..\..\..\ViewModel.xaml;
+..\..\..\ViewModel.xaml;View\CharacterControl.xaml;View\CharactersPage.xaml;View\MainWindow.xaml;
 
-True
+False
 
