@@ -20,9 +20,12 @@ namespace prct6.View
     /// </summary>
     public partial class CharacterControl : UserControl
     {
+        public string CharacterName { get; set; }
+        public BitmapImage CharacterImage { get; set; } = new BitmapImage(new Uri("C:\\Users\\My\\Downloads\\мигель.png", UriKind.Absolute));
         public CharacterControl()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }

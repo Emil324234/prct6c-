@@ -9,9 +9,11 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using prct6.View;
 
 namespace prct6
 {
@@ -25,9 +27,10 @@ namespace prct6
             InitializeComponent();
         }
 
-        private void Calendar_DisplayDateChanged(object sender, CalendarDateChangedEventArgs e)
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-
+            calend.Visibility = Visibility.Hidden;
+            PageFrame.Content = new CharactersPage();
         }
     }
 }

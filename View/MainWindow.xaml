@@ -6,12 +6,13 @@
         xmlns:local="clr-namespace:prct6"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="400">
+        Title="Calendar" Height="400" Width="400">
     <Grid>
-        <Calendar DisplayDateChanged="Calendar_DisplayDateChanged">
+        <Frame x:Name="PageFrame"/>
+        <Calendar x:Name="calend">
             <Calendar.ContextMenu>
                 <ContextMenu>
-                    <MenuItem Header="Choose me"/>
+                    <MenuItem Header="Choose me" Click="MenuItem_Click"/>
                 </ContextMenu>
             </Calendar.ContextMenu>
         </Calendar>
