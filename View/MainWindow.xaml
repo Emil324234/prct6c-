@@ -13,6 +13,8 @@
             <Calendar.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Выберите персонажей" Click="MenuItem_Click"/>
+                    <MenuItem Header="Очистить день" Click="{Binding RemoveImageCommand}"/>
+                    <MenuItem Header="Посмотреть день" />
                 </ContextMenu>
             </Calendar.ContextMenu>
         </Calendar>

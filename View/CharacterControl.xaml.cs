@@ -21,7 +21,6 @@ namespace prct6.View
     /// </summary>
     public partial class CharacterControl : UserControl
     {
-        MainWindow mainWindow = new MainWindow();
         public string CharacterName { get; set; }
         public BitmapImage CharacterImage { get; set; }
         public CharacterControl() { }

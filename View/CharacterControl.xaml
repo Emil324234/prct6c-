@@ -12,7 +12,7 @@
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
-        <CheckBox VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <CheckBox x:Name="check"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Image Grid.Column="1" Stretch="UniformToFill" Source="{Binding CharacterImage}"/>
         <TextBlock Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Binding CharacterName}"/>
     </Grid>

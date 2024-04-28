@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using prct6.View;
+using prct6.ViewModel;
 
 namespace prct6
 {
@@ -25,10 +26,18 @@ namespace prct6
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainVM();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            DoubleAnimation animOpacity = new DoubleAnimation();
+            animOpacity.From = calend.Opacity;
+            animOpacity.To = 0;
+            animOpacity.Duration = TimeSpan.FromSeconds(3);
+
+            calend.BeginAnimation(OpacityProperty, animOpacity);
+
             calend.Visibility = Visibility.Hidden;
             PageFrame.Content = new CharactersPage();
         }

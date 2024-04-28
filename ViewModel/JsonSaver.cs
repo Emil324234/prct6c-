@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media.TextFormatting;
 
 namespace prct6.ViewModel
 {
@@ -13,17 +14,16 @@ namespace prct6.ViewModel
     {
 
         //сериализация
-        public static string SerializeObject(object obj)
+        public static void SerializeObject<T>(T obj, string pathjson)
         {
             try
             {
-                string serializedObj = JsonConvert.SerializeObject(obj);
-                return serializedObj;
+                string txtjson = JsonConvert.SerializeObject(obj, Formatting.Indented);
+                File.WriteAllText(pathjson, txtjson);
             }
             catch (Exception e)
             {
                 MessageBox.Show($"Не, не, не, не, не: {e.Message}", "Ошибка");
-                return null;
             }
         }
 

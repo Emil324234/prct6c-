@@ -21,11 +21,6 @@
         <Button Grid.Column="1" Command="{Binding SaveImageCommand}">
             <md:PackIcon Kind="ContentSave"/>
         </Button>
-        <ListBox x:Name="imgs" Grid.Row="1" Grid.ColumnSpan="2">
-            <local:CharacterControl CharacterName="мигель рохо" Width="386" Height="84"/>
-            <local:CharacterControl CharacterName="мигель рохо" Width="386" Height="84"/>
-            <local:CharacterControl CharacterName="мигель рохо" Width="386" Height="84"/>
-            <local:CharacterControl CharacterName="мигель рохо" Width="386" Height="84"/>
-        </ListBox>
+        <ListBox x:Name="imgs" Grid.Row="1" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>

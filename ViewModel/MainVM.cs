@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using prct6.Model;
+using prct6.View;
 using prct6.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace prct6.ViewModel
     internal class MainVM : BindingHelper
     {
         MainWindow mainWindow = new MainWindow();
+        CharacterControl characterControl = new CharacterControl();
 
         private BindableCommand _save;
         public BindableCommand SaveImageCommand
@@ -47,12 +49,11 @@ namespace prct6.ViewModel
 
                 foreach (var item in charjson)
                 {
-                    if (item.DateChoice == (DateTime)mainWindow.calend.SelectedDate)
-                    {
-                        var forDelete = JsonSaver.DeserializeObject<List<Character>>(path);
-                        forDelete.Clear();
-                        JsonSaver.SerializeObject(forDelete);
-                    }
+                    var forDelete = JsonSaver.DeserializeObject<List<Character>>(path);
+                    DateTime dateSelected = (DateTime)mainWindow.calend.SelectedDate;
+                    List<Character> charsDisplayed = forDelete.FindAll(chara => chara.DateChoice == dateSelected.Date);
+                    charsDisplayed.Clear();
+                    JsonSaver.SerializeObject(forDelete, path);
                 }
             }
         }
@@ -66,7 +67,14 @@ namespace prct6.ViewModel
                 {
                     File.Create(jsonContent);
                 }
-                var jsonData = JsonSaver.SerializeObject(jsonContent);
+
+                if (characterControl.check.IsChecked == true)
+                {
+                    Character chara = new Character(characterControl.CharacterName, characterControl.CharacterImage, 
+                        (DateTime)mainWindow.calend.SelectedDate);
+
+                    JsonSaver.SerializeObject(chara ,jsonContent);
+                }
             } 
         }
     }

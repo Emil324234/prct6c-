@@ -22,10 +22,19 @@ namespace prct6.View
     /// </summary>
     public partial class ImagesForDay : Page
     {
-        JsonSaver json = new JsonSaver();
+        MainWindow mainWindow = new MainWindow();
         public ImagesForDay()
         {
             InitializeComponent();
+
+            var jsonFile = JsonSaver.DeserializeObject<List<Character>>("path.json");
+            foreach (var item in jsonFile)
+            {
+                DateTime dateSelected = (DateTime)mainWindow.calend.SelectedDate;
+                List<Character> charsDisplayed = jsonFile.FindAll(chara => chara.DateChoice == dateSelected.Date);
+                images.Items.Add(item.ImageChoice);
+            }
+
         }
     }
 }
