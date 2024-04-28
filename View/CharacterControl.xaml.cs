@@ -1,4 +1,5 @@
-﻿using System;
+﻿using prct6.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,11 +21,15 @@ namespace prct6.View
     /// </summary>
     public partial class CharacterControl : UserControl
     {
+        MainWindow mainWindow = new MainWindow();
         public string CharacterName { get; set; }
-        public BitmapImage CharacterImage { get; set; } = new BitmapImage(new Uri("C:\\Users\\My\\Downloads\\мигель.png", UriKind.Absolute));
+        public BitmapImage CharacterImage { get; set; } /*= new BitmapImage(new Uri("C:\\Users\\My\\Downloads\\мигель.png", UriKind.Absolute));*/
         public CharacterControl()
         {
             InitializeComponent();
+
+            Character imgChar = new Character(CharacterName, CharacterImage, (DateTime)mainWindow.calend.SelectedDate);
+
             DataContext = this;
         }
     }

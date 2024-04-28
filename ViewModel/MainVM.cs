@@ -1,15 +1,19 @@
-﻿using prct6.ViewModel.Helpers;
+﻿using prct6.Model;
+using prct6.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace prct6.ViewModel
 {
     internal class MainVM : BindingHelper
     {
-        JsonSaver json = new JsonSaver();
+        MainWindow mainWindow = new MainWindow();
 
         private BindableCommand _save;
         public BindableCommand SaveImageCommand
@@ -34,12 +38,23 @@ namespace prct6.ViewModel
 
         public void RemoveImageFromDay()
         {
-            
+            string path = "path.json";
+            List<Character> charjson = JsonSaver.DeserializeObject<List<Character>>(path);
+
+            foreach (var item in charjson)
+            {
+                if (item.DateChoice == (DateTime)mainWindow.calend.SelectedDate)
+                {
+                    var forDelete = JsonSaver.DeserializeObject<List<Character>>(path);
+                    forDelete.Clear();
+                    JsonSaver.SerializeObject(forDelete);
+                }
+            }
         }
 
         public void SaveImageForDay()
         {
-            
+           
         }
     }
 }

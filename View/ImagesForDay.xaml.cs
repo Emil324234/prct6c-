@@ -1,4 +1,5 @@
 ﻿using prct6.Model;
+using prct6.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,18 +12,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace prct6.View
 {
     /// <summary>
-    /// Логика взаимодействия для CharactersPage.xaml
+    /// Логика взаимодействия для ImagesForDay.xaml
     /// </summary>
-    public partial class CharactersPage : Page //страница для меню выбора персонажей
+    public partial class ImagesForDay : Page
     {
-        public CharactersPage()
+        JsonSaver json = new JsonSaver();
+        public ImagesForDay()
         {
             InitializeComponent();
         }

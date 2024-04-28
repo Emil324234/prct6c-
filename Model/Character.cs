@@ -17,7 +17,7 @@ namespace prct6.Model
         {
             Name = name;
             ImageChoice = image;
-            DateChoice = date;
+
         }
     }
 }
