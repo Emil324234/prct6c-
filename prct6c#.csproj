@@ -116,6 +116,36 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Безымянный Король.jpg" />
+    <Resource Include="Images\БК и Виверна.jpg" />
+    <Resource Include="Images\Братья.jpg" />
+    <Resource Include="Images\Виверна.jpg" />
+    <Resource Include="Images\Вордт.jpg" />
+    <Resource Include="Images\Гаэль послабее.jpg" />
+    <Resource Include="Images\Гаэль.jpg" />
+    <Resource Include="Images\Гвин.jpg" />
+    <Resource Include="Images\Гвиндолин.jpg" />
+    <Resource Include="Images\Девушка.jpg" />
+    <Resource Include="Images\Доспехи Драконоборца.jpg" />
+    <Resource Include="Images\Душа Пепла.jpg" />
+    <Resource Include="Images\Йорм.jpg" />
+    <Resource Include="Images\Копье Церкви.jpg" />
+    <Resource Include="Images\Мидир.jpg" />
+    <Resource Include="Images\Обжора.jpg" />
+    <Resource Include="Images\Отец Манус.jpg" />
+    <Resource Include="Images\Охотник.jpg" />
+    <Resource Include="Images\Понтифик.jpg" />
+    <Resource Include="Images\Священники.jpg" />
+    <Resource Include="Images\Сестра Фриде.jpg" />
+    <Resource Include="Images\Скелет.jpg" />
+    <Resource Include="Images\Спаммер.jpg" />
+    <Resource Include="Images\Старый Король.jpg" />
+    <Resource Include="Images\Судия Гундир.jpg" />
+    <Resource Include="Images\Танцовщица.jpg" />
+    <Resource Include="Images\Хранители Бездны.jpg" />
+    <Resource Include="Images\Чародей.jpg" />
+    <Resource Include="Images\Чемпион Гундир.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
