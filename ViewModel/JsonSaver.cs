@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using Newtonsoft.Json;
+
 
 namespace prct6.ViewModel
 {
-    internal class JsonSaver //для json
+    internal class JsonSaver
     {
-        //сериализация
-        public void Serialise()
+        public static string SerializeObject(object obj)
         {
             try
             {
@@ -18,12 +20,23 @@ namespace prct6.ViewModel
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Не, не, не, не, не: {e.Message}");
+                MessageBox.Show($"Не, не, не, не, не: {e.Message}", "Ошибка");
                 return null;
             }
         }
 
-        //десериализация
-        public void Deserialize() { }
+        public static T DeserializeObject<T>(string jsonStr)
+        {
+            try
+            {
+                T deserializedObj = JsonConvert.DeserializeObject<T>(jsonStr);
+                return deserializedObj;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($"Не, не, не, не, не, не: {e.Message}", "Ошибка");
+                return default(T);
+            }
+        }
     }
 }

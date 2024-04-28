@@ -1,4 +1,5 @@
-﻿using prct6.ViewModel.Helpers;
+﻿using Microsoft.Win32;
+using prct6.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,16 +31,31 @@ namespace prct6.ViewModel
                     (_remove = new BindableCommand(_=> RemoveImageFromDay()));
             }
         }
+
+        private void RemoveImageFromDay()
+        {
+            throw new NotImplementedException();
+        }
+
         public MainVM() { }
 
-        public void RemoveImageFromDay()
+        public void RemoveImageFromDay(string jsonFilePath, string targetDate)
         {
             
         }
 
         public void SaveImageForDay()
         {
-            
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string jsonContent = json.LoadJsonData();
+
+                if(!string.IsNullOrEmpty(jsonContent))
+                {
+                    var jsonData = JsonSaver.SerializeObject(jsonContent);
+                }
+            }
         }
     }
 }
