@@ -23,14 +23,7 @@ namespace prct6.View
     {
         MainWindow mainWindow = new MainWindow();
         public string CharacterName { get; set; }
-        public BitmapImage CharacterImage { get; set; } /*= new BitmapImage(new Uri("C:\\Users\\My\\Downloads\\мигель.png", UriKind.Absolute));*/
-        public CharacterControl()
-        {
-            InitializeComponent();
-
-            Character imgChar = new Character(CharacterName, CharacterImage, (DateTime)mainWindow.calend.SelectedDate);
-
-            DataContext = this;
-        }
+        public BitmapImage CharacterImage { get; set; }
+        public CharacterControl() { }
     }
 }

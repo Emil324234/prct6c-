@@ -25,6 +25,18 @@ namespace prct6.View
         public CharactersPage()
         {
             InitializeComponent();
+
+            //это пример, его можно будет удалить
+            CharacterControl first = new CharacterControl();
+            first.CharacterName = "Мигель Рохо";
+            first.CharacterImage = new BitmapImage(new Uri("\\Images\\мигель.png", UriKind.Relative));
+
+            //так остальные персонажи. надо будет создать папку images и вставить туда картинки, чтобы оттуда брать изображения
+            //внос персонажей в список после создания всех
+
+            List<CharacterControl> characters = new List<CharacterControl>() { first}; 
+            imgs.ItemsSource = characters;
+
         }
     }
 }
